@@ -7,6 +7,10 @@ return {
     end,
   },
   {
+    -- Signs for git
+    'lewis6991/gitsigns.nvim',
+  },
+  {
     -- Plugin to show keybinds
     'folke/which-key.nvim',
   },
