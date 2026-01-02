@@ -193,6 +193,9 @@ return {
     --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
     --  - settings (table): Override the default settings passed when initializing the server.
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+
     local servers = {
       -- clangd = {},
       -- gopls = {},
@@ -207,10 +210,12 @@ return {
       -- ts_ls = {},
       --
       clangd = {},
+      neocmake = {
+        capabilities = capabilities,
+      },
       ts_ls = {},
       glsl_analyzer = {},
       dockerls = {},
-      cmake = {},
       ruff = {},
       pylsp = {
         settings = {

@@ -164,25 +164,25 @@ set background=dark
 " hi VertSplit guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
 
 " Sync clipboard with OS
- if system('uname -s') == "Darwin\n"
-   set clipboard=unnamed "OSX
- else
-   set clipboard=unnamedplus "Linux
- endif
+" if system('uname -s') == "Darwin\n"
+"   set clipboard=unnamed "OSX
+" else
+"   set clipboard=unnamedplus "Linux
+" endif
 
 " if wsl
-"let g:clipboard = {
-"  \   'name': 'WslClipboard',
-"  \   'copy': {
-"  \      '+': 'clip.exe',
-"  \      '*': 'clip.exe',
-"  \    },
-"  \   'paste': {
-"  \      '+': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-"  \      '*': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-"  \   },
-"  \   'cache_enabled': 0,
-"  \ }
+let g:clipboard = {
+  \   'name': 'WslClipboard',
+  \   'copy': {
+  \      '+': 'clip.exe',
+  \      '*': 'clip.exe',
+  \    },
+  \   'paste': {
+  \      '+': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  \      '*': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  \   },
+  \   'cache_enabled': 0,
+  \ }
 
 " True colors
 if !has('gui_running') && &term =~ '\%(screen\|tmux\)'
