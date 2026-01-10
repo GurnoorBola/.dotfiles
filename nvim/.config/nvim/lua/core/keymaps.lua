@@ -88,5 +88,5 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 -- Run run.sh and debug.sh
 
-vim.keymap.set('n', '<leader>rr', ':call VimuxRunCommand("./run.sh")<CR>', { desc = 'Run run.sh script' })
-vim.keymap.set('n', '<leader>rd', ':call VimuxRunCommand("./debug.sh")<CR>', { desc = 'Debug debug.sh script' })
+vim.keymap.set('n', '<leader>rr', ':call VimuxRunCommand("./run.sh")<CR>', { desc = 'Run run.sh script', silent = true })
+vim.keymap.set('n', '<leader>rd', ':call VimuxRunCommand("./debug.sh")<CR>', { desc = 'Debug debug.sh script', silent = true })
