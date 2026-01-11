@@ -24,5 +24,6 @@ require('lazy').setup {
   require 'plugins.bufferline',
   require 'plugins.autocompletion',
   require 'plugins.autoformat',
+  require 'plugins.vimtex',
   require 'plugins.misc',
 }

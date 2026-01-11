@@ -12,6 +12,7 @@ PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
 
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
 
 eval "$(tmuxifier init -)"
 
