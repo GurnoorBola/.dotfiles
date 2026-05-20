@@ -16,7 +16,7 @@ export GEM_HOME="$(gem env user_gemhome)"
 export PATH="$PATH:$GEM_HOME/bin"
 
 export PATH="$HOME/.tmuxifier/bin:$PATH"
-export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
+export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"
 
 eval "$(tmuxifier init -)"
 

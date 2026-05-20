@@ -235,6 +235,7 @@ return {
         },
       },
       html = { filetypes = { 'html', 'twig', 'hbs' } },
+      cssls = {},
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
