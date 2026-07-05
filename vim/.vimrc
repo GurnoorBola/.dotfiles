@@ -130,8 +130,8 @@ nnoremap <leader>b :enew<CR>
 nnoremap <leader>lw :set wrap!<CR>
 
 " Press jk fast to exit insert mode
-inoremap jk <ESC>
-inoremap kj <ESC>
+"inoremap jk <ESC>
+"inoremap kj <ESC>
 
 " Stay in indent mode
 " vnoremap < <gv
@@ -141,8 +141,8 @@ inoremap kj <ESC>
 vnoremap p "_dP
 
 " Explicitly yank to system clipboard (highlighted and entire row)
-noremap <leader>y "+y
-noremap <leader>Y "+Y
+"noremap <leader>y "+y
+"noremap <leader>Y "+Y
 
 " Open file explorer
 noremap <silent> <leader>e :Lex<CR>
