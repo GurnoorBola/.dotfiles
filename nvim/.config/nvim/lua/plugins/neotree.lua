@@ -10,6 +10,9 @@ return {
   config = function()
     require('neo-tree').setup {
       -- Add configuration if necessary from docs
+      filesystem = {
+        hijack_netrw_behavior = 'disabled',
+      },
     }
     vim.cmd [[nnoremap \ :Neotree reveal<cr>]]
     vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true, silent = true }) -- focus file explorer
