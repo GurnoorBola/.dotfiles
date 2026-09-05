@@ -28,8 +28,8 @@ require('lazy').setup({
   require 'plugins.autoformat',
   require 'plugins.vimtex',
   require 'plugins.misc',
-  require 'plugins.helicopter',
-}, { dev = {
+  -- require 'plugins.helicopter',
+}--[[, { dev = {
   path = '~/Projects/neovim_plugins/',
   fallback = false,
-} })
+} }--]])
