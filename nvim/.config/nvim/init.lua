@@ -14,9 +14,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
-require('lazy').setup {
+require('lazy').setup({
   require 'plugins.colorscheme',
   require 'plugins.neotree',
+  require 'plugins.lazydev',
   require 'plugins.oil',
   require 'plugins.treesitter',
   require 'plugins.lualine',
@@ -27,4 +28,8 @@ require('lazy').setup {
   require 'plugins.autoformat',
   require 'plugins.vimtex',
   require 'plugins.misc',
-}
+  require 'plugins.helicopter',
+}, { dev = {
+  path = '~/Projects/neovim_plugins/',
+  fallback = false,
+} })
