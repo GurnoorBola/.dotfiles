@@ -14,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
-require('lazy').setup({
+require('lazy').setup {
   require 'plugins.colorscheme',
   require 'plugins.neotree',
   require 'plugins.lazydev',
@@ -32,4 +32,4 @@ require('lazy').setup({
 }--[[, { dev = {
   path = '~/Projects/neovim_plugins/',
   fallback = false,
-} }--]])
+} }--]]
